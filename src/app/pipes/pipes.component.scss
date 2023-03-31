@@ -1,0 +1,25 @@
+.main{
+  width: 75vw;
+  margin: auto;
+}
+
+th{
+  text-align: center;
+  background-color: rgb(37, 33, 33);
+  color: white;
+}
+.searchbar{
+  margin-bottom: 1rem;
+}
+input{
+  width: 100%;
+}
+
+table{
+  width: 100%;
+  // margin: auto;
+}
+th,td{
+  border: 1px solid black;
+  padding: 1rem;
+}

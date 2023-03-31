@@ -1,0 +1,40 @@
+.item-list{
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  color: black;
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.item{
+  margin-left: 3rem;
+}
+
+.item-button{
+  margin-right: 5rem;
+}
+
+.check-out{
+  background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.check-out button{
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+  color: #3c4043;
+  cursor: pointer;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+}
+
+.check-out button:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}

@@ -1,0 +1,35 @@
+<p>{{value | firstPipe:10}}</p>
+
+<ul>
+  <li *ngFor="let item of nameArray">
+    {{item | firstPipe:5}}
+  </li>
+</ul>
+
+
+<div class="main">
+  <div class="searchbar">
+    <input type="text" placeholder="Enter name of the item to seach..." [(ngModel)]="searchtext">
+  </div>
+  <div class="productDiv">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of productArray | filterProducts:searchtext">
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.price}}</td>
+          <td>{{item.availability}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

@@ -1,0 +1,27 @@
+<div>
+  <div class="item-list check-out" *ngIf="checkOut">
+    <strong class="item">{{itemNameParent}} is selected and added to cart</strong>
+    <button>Buy Item</button>
+  </div>
+
+  <div class="content">
+    <div class="item-list">
+      <div class="item">TV</div>
+      <button class="item-button" (click)="checkButtonHandler('TV')">Check</button>
+    </div>
+    <div class="item-list">
+      <div class="item">Mobile</div>
+      <button class="item-button" (click)="checkButtonHandler('Mobile')">Check</button>
+    </div>
+    <div class="item-list">
+      <div class="item">Washing Machine</div>
+      <button class="item-button" (click)="checkButtonHandler('Washing Machine')">Check</button>
+    </div>
+    <div class="item-list">
+      <div class="item">Desktop</div>
+      <button class="item-button" (click)="checkButtonHandler('Desktop')">Check</button>
+    </div>
+  </div>
+
+  <app-child [itemName]="itemNameParent" (checkOutChild)="addToCartHandler($event)"></app-child>
+</div>

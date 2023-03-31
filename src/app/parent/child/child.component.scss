@@ -1,0 +1,13 @@
+.bottom-display {
+  background-color: rgb(39, 37, 37);
+  margin: 3rem;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-display button {
+  width: 10rem;
+}

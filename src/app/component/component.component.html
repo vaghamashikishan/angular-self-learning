@@ -1,0 +1,52 @@
+<accordion [isAnimated]="true">
+  <accordion-group heading="Static Header">
+    This content is straight in the template.
+  </accordion-group>
+  <accordion-group heading="Another group">
+    <p>Some content</p>
+  </accordion-group>
+  <accordion-group heading="Another group">
+    <p>Some content</p>
+  </accordion-group>
+  <accordion-group heading="Another group">
+    <p>Some content</p>
+  </accordion-group>
+</accordion>
+
+<table>
+  <tbody>
+    <tr *ngFor="let detail of details; index as i">
+      <td>{{i+1}}</td>
+      <td>{{detail.name}}</td>
+      <td>{{detail.price}}</td>
+      <td>{{detail.seller}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <app-component></app-component>
+
+<div>
+  <button (click)="blockButtonHandler()">Create block!</button>
+  <div *ngIf="isValid then thenBlock else elseBlock"></div>
+  <ng-template #thenBlock>
+    <div>I am then condition</div>
+  </ng-template>
+  <ng-template #elseBlock>
+    <div>I am else condition</div>
+  </ng-template>
+</div>
+
+
+<div>
+  <select (change)="onChange($event)">
+    <option value="surat">Surat</option>
+    <option value="vapi">Vapi</option>
+    <option value="rajkot">Rajkot</option>
+  </select>
+  <div [ngSwitch]="selectedProduct">
+    <h1 *ngSwitchCase="'surat'">Surat</h1>
+    <h1 *ngSwitchCase="'vapi'">Vapi</h1>
+    <h1 *ngSwitchCase="'rajkot'">Rajkot</h1>
+  </div>
+</div> -->

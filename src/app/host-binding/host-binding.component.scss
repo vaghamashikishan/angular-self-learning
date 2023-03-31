@@ -1,0 +1,46 @@
+.drop-down{
+  display: inline-block;
+  width: 35%;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+}
+.city{
+  border: 1px solid goldenrod;
+  padding: 0.5rem;
+}
+.drop-down > .icon{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    position: absolute;
+    right: 18px;
+    top: 1rem;
+    transform: rotate(-45deg);
+    transition: all .11s ease-in;
+}
+.drop-down > .icon:active{
+  cursor: pointer;
+    transform: rotate(135deg);
+    transition: all .11s ease-in;
+    margin-top: 5px;
+}
+
+.icon.active + .dropdown-content{
+  display: block;
+}
+.dropdown-content{
+  border: 1px solid goldenrod;
+  display: block;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.dropdown-content a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 0.2rem;
+}

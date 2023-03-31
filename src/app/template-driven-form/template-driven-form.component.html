@@ -1,0 +1,25 @@
+<div class="w-50 m-auto mt-5 shadow p-5">
+  <form (ngSubmit)="onFromSubmit()" #myForm='ngForm'>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter username" name="username"
+        [(ngModel)]="username" #username2="ngModel" required>
+    </div>
+    <small *ngIf="!username2.valid && username2.touched" class="text-danger">Please enter valid Username</small>
+    <div class="form-group mt-3">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password" name="password"
+        [(ngModel)]="password">
+    </div>
+    <div class="form-group">
+      <label for="course" class="mt-3">Select Course</label>
+      <select class="form-control p-2 w-100" id="course" name="course" [(ngModel)]="selectedCourse">
+        <option value="Angular">Angular</option>
+        <option value="React">React</option>
+        <option value="Vue">Vue</option>
+        <option value="NextJS">NextJS</option>
+      </select>
+    </div>
+    <button [disabled]="!myForm.valid" type="submit" class="btn btn-success mt-3">Submit</button>
+  </form>
+</div>
